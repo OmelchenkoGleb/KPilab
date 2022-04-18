@@ -1,3 +1,8 @@
+package com.example.save.savepo.Dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class Vizhinera {
     private String text;
     private String key;

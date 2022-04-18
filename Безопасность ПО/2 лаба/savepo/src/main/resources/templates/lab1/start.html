@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="modal">
+    <form action="/lab1" method="post">
+        <div class="form-group">
+            <label for="inputState">Выберите действие.</label>
+            <select id="inputState" class="form-control" name="name">
+                <option th:each="el : ${option}" th:text="${el}"></option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Подтвердить</button>
+    </form>
+</div>
+
+
+</body>
+</html></body>
+</html>

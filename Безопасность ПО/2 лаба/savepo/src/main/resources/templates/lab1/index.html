@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="alert alert-danger">
+    <p th:text="${massage}"></p>
+</div>
+
+<div class="modal">
+    <form action="/check" method="post">
+        <div class="form-group">
+            <label for="exampleInputPassword1">Вы проштрафили время. Введите ключ.</label>
+            <input type="password" name="key" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <div class="g-recaptcha" data-sitekey="6Ld7Z0kfAAAAAMfqVHDUTrQIZdETFKZU2VRTMjuq"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Подтвердить</button>
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="alert alert-danger">
+    <p th:text="${result}"></p>
+</div>
+<div class="modal">
+    <form action="/lab1/renamefile" method="post">
+        <label for="text">Укажите путь к файлу.</label>
+        <input type="text" name="place" class="form-control" id="text" placeholder="Путь">
+        <label for="key">Укажите название файла.</label>
+        <input type="text" name="name" class="form-control" id="key" placeholder="Название">
+        <label for="name">Укажите новое название файла.</label>
+        <input type="text" name="newname" class="form-control" id="name" placeholder="Название">
+        <button type="submit" class="btn btn-primary">Подтвердить</button>
+        <a href="/choose" >Перейти в меню</a>
+    </form>
+</div>
+
+
+</body>
+</html></body>
+</html>
