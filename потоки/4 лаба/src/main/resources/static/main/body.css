@@ -1,0 +1,72 @@
+body{
+
+    /*background: #F4F7EE;*/
+
+    background: url(back.jpg), no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+
+    padding:45px;
+}
+.table{
+    margin-bottom: 0;
+}
+.table_price {
+    border-collapse: collapse;
+    border-left: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    font-family: "Lucida Grande", sans-serif;
+}
+.table_price_a{
+    width: 100%;
+}
+.table_price caption {
+    background: #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px  4px 0 rgba(0,0,0,.3);
+    color: white;
+    font-family: "Roboto Slab",serif;
+    font-style: normal;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+}
+.table_price td, .table_price th {
+    padding: 10px;
+}
+.table_price th {
+    text-align: left;
+    font-size: 18px;
+}
+.table_price tr:nth-child(2n) {
+    background: #E5E5E5;
+}
+.table_price tr:nth-child(2n-1) {
+    background: #FFFFFF;
+}
+.table_price td:last-of-type {
+    text-align: center;
+}
+.table_price a, .table_price button {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #000000;
+    box-shadow: 2px 2px 0 0 #F79361;
+    position: relative;
+}
+.table_price a:hover, .table_price button:hover {
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+    color:#1b1b1b;
+    background:#F79361;
+}
+.table_price a, .table_price button{
+    text-decoration: none;
+    color: #FFFFFF;
+}

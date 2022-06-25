@@ -1,0 +1,23 @@
+.style-1 {
+    text-align: center;
+}
+.btn{
+    color:#999;
+    background:rgba(0, 0, 0, 1);
+    padding:10px 20px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.btn:hover{
+    border:none;
+    background:rgba(0, 0, 0, 0.4);
+    background:#F79361;
+    padding:20px 20px;
+    color:#1b1b1b;
+}
+
+.btn{
+    display: unset;
+}
